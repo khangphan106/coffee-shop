@@ -1,0 +1,114 @@
+{
+  "title": "Xiangqi Realm",
+  "hook": "Master tactical Chinese chess battles",
+  "game_overview": "A sleek modern Chinese Chess game featuring intelligent AI opponents, intuitive move hints, tactical analysis, and polished mobile-first UX.",
+  "artstyle": "modern-vector",
+  "genre": "board_card",
+  "winning_condition": "Checkmate or stalemate the opposing General across tactical skirmishes.",
+  "losing_condition": "Your General is checkmated, stalemated, or resigns.",
+  "player_mode": "single_player",
+  "supported_orientations": [
+    "portrait",
+    "landscape"
+  ],
+  "input_methods": [
+    "touch",
+    "mouse",
+    "keyboard"
+  ],
+  "score_options": {
+    "score_type": "points",
+    "score_order": "higher_is_better"
+  },
+  "low_end_device_support": true,
+  "mobile_playable": true,
+  "tv_playable": false,
+  "language": [
+    "en"
+  ],
+  "content_descriptors": [],
+  "controls": [
+    {
+      "input": "Tap / Click Piece",
+      "action": "Select a piece and highlight valid legal moves on the board."
+    },
+    {
+      "input": "Tap / Click Highlighted Cell",
+      "action": "Move selected piece to the target grid position or capture opponent piece."
+    },
+    {
+      "input": "Hint Button / Key H",
+      "action": "Highlight recommended tactical move evaluated by the AI engine."
+    },
+    {
+      "input": "Undo Button / Key U",
+      "action": "Revert the last move and corresponding AI response."
+    },
+    {
+      "input": "Analysis Drawer / Swipe Up",
+      "action": "Toggle real-time board evaluation bar and move history notation."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Design Pillars",
+      "content": "1. Modern Tactile Elegance: Premium frosted-glass cards, sleek jade and ruby color accents, micro-animations, and fluid physics-inspired piece gliding. 2. Effortless Accessibility: Clear valid move indicators, capture danger previews, and adaptive AI difficulty tiers (Novice, Adept, Grandmaster). 3. Deep Analytical Feedback: Dynamic real-time advantage bar, comprehensive move history notation, and interactive undo/hint assistants.",
+      "summary": "Core modern mobile design principles."
+    },
+    {
+      "title": "Core Loop",
+      "content": "The player selects Red or Black pieces and matches against an AI opponent across 3 difficulty tiers. Each turn, the player selects a piece to view valid legal path highlights (including river crossing and cannon jump rules), executes strategic captures, and defends the palace. The AI computes optimized responses using Minimax with Alpha-Beta pruning. The game concludes when a General is checkmated or stalemated.",
+      "summary": "The tactical turn-based Xiangqi loop."
+    },
+    {
+      "title": "Core Mechanics",
+      "content": "1. Authentic Chinese Chess Rule Engine: Full support for all traditional piece mechanics (General, Advisors in Palace, Elephants blocked by eye, Horses blocked by leg, Chariots, Cannons requiring screen to jump, Soldiers crossing the Chu River). 2. Multi-Tier AI Opponent: Configurable depth AI ranging from casual heuristic play to deep minimax tactical search. 3. Smart HUD & Analysis: Evaluation score gauge, captured pieces dock, move list notation, and interactive hint system.",
+      "summary": "Authentic Xiangqi rules combined with smart assistants."
+    },
+    {
+      "title": "Movement & Scrolling Alignment",
+      "content": "Scrolling Axis: Static single-screen viewport with dynamic responsive scaling for both portrait (9:16) and landscape (16:9). Asset Orientation Baseline: True 90-degree orthogonal overhead view looking straight down. Movement Physics Dynamics: Smooth spring-based interpolation between board coordinate intersections with haptic visual ripples upon placement. Camera Behavior: Static camera locked to the full 9x10 grid.",
+      "summary": "Grid-locked orthogonal board representation."
+    },
+    {
+      "title": "Visual Hierarchy & Layering",
+      "content": "Layer Separation: Background layer features a subtle dark slate woodgrain texture with low contrast. The playfield features crisp golden lattice gridlines and river dividing calligraphy. Game pieces stand out with embossed circular tokens, high-contrast Chinese characters in dual script (traditional glyphs + clean romanized sub-labels for beginners), and vivid glow outlines for active selections.",
+      "summary": "High contrast playfield with modern dark zen backdrop."
+    },
+    {
+      "title": "Characters & Enemies",
+      "content": "Novice Master (Gentle AI focusing on basic captures and defensive palace positioning), Tactical Adept (Balanced AI utilizing cannon batteries and horse forks), Grandmaster Sage (High-depth minimax search with positional evaluation and endgame calculation).",
+      "summary": "AI archetypes and difficulty personas."
+    },
+    {
+      "title": "Fairness Tools",
+      "content": "1. Move Safety Preview: Highlights cells under enemy threat in soft crimson. 2. Threat Indicator: Warning pulse when the General is placed in Check (Jiang). 3. Unlimited Undo & Tactical Hint generation for match analysis.",
+      "summary": "Player assistance and learning features."
+    },
+    {
+      "title": "Juice & Game Feel",
+      "content": "Anticipation Juice: Subtle piece elevation and drop-shadow enlargement on pointer down. State Change Juice: Soft ambient glowing trails when dragging or moving pieces across the river. Impact Juice: Tactile screen pulse, particle burst on captures, and dramatic calligraphy victory/checkmate banner animation.",
+      "summary": "Micro-interactions and tactile feedback."
+    },
+    {
+      "title": "Social Mechanics & Audience",
+      "content": "Designed for both traditional Xiangqi veterans and modern strategy game enthusiasts seeking a polished, premium mobile board experience with local stats tracking.",
+      "summary": "Broad demographic appeal for strategic minds."
+    },
+    {
+      "title": "Accessibility",
+      "content": "Toggleable Romanized piece labels (General, Advisor, Elephant, Horse, Chariot, Cannon, Soldier) alongside traditional Chinese characters. High contrast piece ring options and full sound/haptic toggles.",
+      "summary": "Inclusivity and learning aids."
+    },
+    {
+      "title": "Structural Integrity",
+      "content": "Main Menu (Mode & Difficulty Selection, Rulebook Guide, Statistics) -> Game Screen (Live Board, Captured Pieces Rack, Move History Drawer, In-Game Controls) -> Post-Match Analysis & Victory Screen.",
+      "summary": "Navigation and screen state management."
+    },
+    {
+      "title": "Virtual Touch Controls Implementation",
+      "content": "Direct tap-to-select and tap-to-move hitboxes expanded around grid intersections with minimum 44px touch targets. On-screen floating action buttons for Undo, Hint, Restart, and Settings styled with modern glassmorphism blur and touch-none pointer handling.",
+      "summary": "Mobile-first touch target optimization."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": [
+    {
+      "name": "aiDifficulty",
+      "type": "number",
+      "label": "AI Difficulty Level",
+      "default": 2,
+      "min": 1,
+      "max": 3,
+      "step": 1
+    },
+    {
+      "name": "turnTimeLimit",
+      "type": "number",
+      "label": "Turn Time Limit (s)",
+      "default": 120,
+      "min": 30,
+      "max": 300,
+      "step": 10
+    },
+    {
+      "name": "maxHintsPerGame",
+      "type": "number",
+      "label": "Max Hints per Match",
+      "default": 5,
+      "min": 0,
+      "max": 10,
+      "step": 1
+    },
+    {
+      "name": "maxUndosPerGame",
+      "type": "number",
+      "label": "Max Undos per Match",
+      "default": 8,
+      "min": 0,
+      "max": 20,
+      "step": 1
+    },
+    {
+      "name": "enableMoveSafety",
+      "type": "boolean",
+      "label": "Show Danger Warnings",
+      "default": true
+    },
+    {
+      "name": "enableRomanizedLabels",
+      "type": "boolean",
+      "label": "Show English Subtitles",
+      "default": true
+    },
+    {
+      "name": "defaultMusicVolume",
+      "type": "number",
+      "label": "Default Music Volume",
+      "default": 0.45,
+      "min": 0,
+      "max": 1,
+      "step": 0.05
+    },
+    {
+      "name": "defaultSfxVolume",
+      "type": "number",
+      "label": "Default SFX Volume",
+      "default": 0.7,
+      "min": 0,
+      "max": 1,
+      "step": 0.05
+    }
+  ],
+  "values": {
+    "aiDifficulty": 2,
+    "turnTimeLimit": 120,
+    "maxHintsPerGame": 5,
+    "maxUndosPerGame": 8,
+    "enableMoveSafety": true,
+    "enableRomanizedLabels": true,
+    "defaultMusicVolume": 0.45,
+    "defaultSfxVolume": 0.7
+  }
+}
